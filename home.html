@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Halaman Utama</title>
+        <link rel="stylesheet" href="STYLE.css">
+        <!-- Penanda JavaScript aktif (dipakai CSS untuk animasi muncul) -->
+        <script>document.documentElement.classList.add("js");</script>
+    </head>
+    <body class="Bg">
+
+        <div class="aurora"><i></i><i></i><i></i></div>
+        <canvas id="debu"></canvas>
+        <div id="cahaya"></div>
+
+        <section class="hero-home rv">
+            <p class="eyebrow">Selamat datang</p>
+            <h1>Programming WEB dengan HTML</h1>
+            <h2>Teknologi Informatika</h2>
+        </section>
+
+        <hr>
+
+        <!-- Teks berjalan (pengganti tag marquee yang sudah usang) -->
+        <div class="ticker rv">
+            <span class="ticker-isi">Selamat datang pada halaman website kami &nbsp;&#10022;&nbsp; Selamat datang pada halaman website kami &nbsp;&#10022;&nbsp;</span>
+        </div>
+
+        <!-- Dua paragrafmu, isinya tidak diubah -->
+        <section class="sambutan rv">
+            <p>Silakan anda mencari informasi di website ini,
+semoga anda mendapatkan tambahan wawasan dan pengetahuan.</p>
+            <p>Pada
+halaman ini akan membahas seputar script HTML dan cara mempercantik tampilan
+web dengan menggunakan CSS (cascading style sheet)</p>
+        </section>
+
+        <!-- Angka menghitung naik saat terlihat -->
+        <section class="statistik rv">
+            <div class="stat"><b data-hitung="5">0</b><span>Halaman</span></div>
+            <div class="stat"><b data-hitung="4">0</b><span>Frame</span></div>
+            <div class="stat"><b data-hitung="100" data-akhiran="%">0</b><span>Semangat</span></div>
+        </section>
+
+        <!-- Tiga kartu bingkai emas -->
+        <section class="grid-kartu">
+            <article class="kartu rv">
+                <span class="no">01</span>
+                <h3>HTML</h3>
+                <p>Kerangka halaman: tag, atribut, tabel, gambar, suara, dan video.</p>
+            </article>
+            <article class="kartu rv">
+                <span class="no">02</span>
+                <h3>CSS</h3>
+                <p>Cascading Style Sheet mempercantik warna, huruf, jarak, dan animasi.</p>
+            </article>
+            <article class="kartu rv">
+                <span class="no">03</span>
+                <h3>Frameset</h3>
+                <p>Satu jendela dibagi menjadi header, menu, isi, dan footer.</p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Tanya jawab: klik pertanyaan untuk membuka jawabannya -->
+        <section class="faq">
+            <h3 class="rv">Tanya Jawab Singkat</h3>
+
+            <div class="faq-item rv">
+                <button class="faq-tanya" type="button">Apa itu HTML?</button>
+                <div class="faq-jawab"><p>HTML (HyperText Markup Language) adalah bahasa penanda untuk menyusun isi halaman web: judul, paragraf, gambar, tabel, dan tautan.</p></div>
+            </div>
+
+            <div class="faq-item rv">
+                <button class="faq-tanya" type="button">Apa fungsi CSS?</button>
+                <div class="faq-jawab"><p>CSS mengatur tampilan: warna, ukuran huruf, jarak, tata letak, sampai animasi, sehingga isi halaman terlihat menarik.</p></div>
+            </div>
+
+            <div class="faq-item rv">
+                <button class="faq-tanya" type="button">Mengapa memakai frameset?</button>
+                <div class="faq-jawab"><p>Frameset membagi satu jendela menjadi beberapa bagian. Menu, header, dan footer tetap diam, sementara isi di sebelah kanan berganti-ganti.</p></div>
+            </div>
+
+            <div class="faq-item rv">
+                <button class="faq-tanya" type="button">Bagaimana cara menayangkan website?</button>
+                <div class="faq-jawab"><p>Unggah semua file ke layanan hosting, pastikan nama folder dan file sama persis, lalu buka alamatnya dari browser.</p></div>
+            </div>
+        </section>
+
+        <script src="efek.js"></script>
+    </body>
+</html>

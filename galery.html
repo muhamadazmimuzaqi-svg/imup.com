@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Halaman Gallery</title>
+        <link rel="stylesheet" href="STYLE.css">
+        <script>document.documentElement.classList.add("js");</script>
+    </head>
+    <body class="foto-cantik">
+
+        <div class="aurora"><i></i><i></i><i></i></div>
+        <canvas id="debu"></canvas>
+        <div id="cahaya"></div>
+
+        <header class="rv">
+            <p class="eyebrow">Gallery</p>
+            <h1>Galeri Foto</h1>
+            <h2>Gerakkan kursor di atas foto, klik untuk layar penuh</h2>
+        </header>
+
+        <!-- Dua fotomu tetap sama. Atribut widht/height yang salah ketik
+             diganti pengaturan di CSS (.foto-kartu img) -->
+        <section class="galeri-grid">
+            <figure class="foto-kartu tilt rv">
+                <img src="image/alone.jpeg" alt="foto alone">
+                <span class="kilau"></span>
+                <figcaption>Alone</figcaption>
+            </figure>
+
+            <figure class="foto-kartu tilt rv">
+                <img src="image/with her.jpeg" alt="foto with her">
+                <span class="kilau"></span>
+                <figcaption>With Her</figcaption>
+            </figure>
+        </section>
+
+        <!-- Tampilan layar penuh saat foto diklik -->
+        <div id="lightbox"><img src="image/alone.jpeg" alt="foto diperbesar"></div>
+
+        <script src="efek.js"></script>
+    </body>
+</html>

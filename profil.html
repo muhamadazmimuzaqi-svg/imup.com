@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Halaman Profil</title>
+        <link rel="stylesheet" href="STYLE.css">
+        <script>document.documentElement.classList.add("js");</script>
+    </head>
+    <body class="Bg-Profil">
+
+        <div class="aurora"><i></i><i></i><i></i></div>
+        <canvas id="debu"></canvas>
+        <div id="cahaya"></div>
+
+        <header class="profil-kepala rv">
+            <p class="eyebrow">Profil</p>
+            <h1>Tentang Pengalaman</h1>
+        </header>
+
+        <!-- Kalimat pertamamu dijadikan kutipan besar -->
+        <blockquote class="kutipan rv">
+            Pengalaman adalah ilmu yang paling berharga yang dapat kita peroleh
+            dimana saja, kapan saja dan tidak harus duduk dibangku sekolah resmi.
+        </blockquote>
+
+        <!-- Paragraf keduamu, isinya tidak diubah -->
+        <section class="isi-profil rv">
+            <p>
+                Belajar dari pengalaman membuat seseorang menjadi lebih berhati-hati dalam
+                segala tindakan atau dalam mengambil keputusan. Hari ini saya mempunyai
+                pengalaman belajar membuat web. Belajar web tidaklah sulit yang penting harus
+                berlatih terus. Saya senang sekali dapat membuat halaman website,
+                apalagi dapat diupload secara online, semua orang akan membaca tulisan saya
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Perjalanan belajar -->
+        <ol class="garis-waktu">
+            <li class="rv">
+                <b>Belajar</b>
+                <span>Mengenal tag HTML, atribut, dan cara menyusun halaman.</span>
+            </li>
+            <li class="rv">
+                <b>Berlatih</b>
+                <span>Membuat tabel, gambar, suara, video, dan mempercantiknya dengan CSS.</span>
+            </li>
+            <li class="rv">
+                <b>Mengunggah</b>
+                <span>Menayangkan website secara online agar dapat dibaca semua orang.</span>
+            </li>
+        </ol>
+
+        <hr>
+
+        <!-- Bar kemahiran: lebarnya diisi dari atribut data-nilai oleh efek.js -->
+        <section class="kemahiran">
+            <h3 class="rv">Kemahiran yang Sedang Dilatih</h3>
+
+            <div class="bar rv">
+                <div class="bar-atas"><span>HTML</span><b data-nilai-teks>0%</b></div>
+                <div class="bar-jalur"><i data-nilai="85"></i></div>
+            </div>
+
+            <div class="bar rv">
+                <div class="bar-atas"><span>CSS</span><b data-nilai-teks>0%</b></div>
+                <div class="bar-jalur"><i data-nilai="70"></i></div>
+            </div>
+
+            <div class="bar rv">
+                <div class="bar-atas"><span>JavaScript</span><b data-nilai-teks>0%</b></div>
+                <div class="bar-jalur"><i data-nilai="45"></i></div>
+            </div>
+        </section>
+
+        <script src="efek.js"></script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh Video MP4 di Header</title>
+  <link rel="stylesheet" href="STYLE.css">
+</head>
+<body class="header-halaman">
+
+  <!-- HEADER DENGAN VIDEO MP4
+       Kotak pembungkus dan pengaturan videomu tetap dipakai
+       (lihat header.video-header di STYLE.css) -->
+  <header class="video-header">
+
+    <!-- Tag Video MP4: autoplay + muted + loop + playsinline
+         (browser hanya mengizinkan autoplay jika video dibisukan) -->
+    <video autoplay muted loop playsinline>
+      <source src="mp3/283534.mp4" type="video/mp4">
+      Browser Anda tidak mendukung tag video HTML5.
+    </video>
+
+    <!-- Lapisan gelap agar tulisan terbaca di atas video -->
+    <div class="video-gelap"></div>
+
+    <div class="header-isi">
+      <p class="eyebrow">Universitas Ma'soem &bull; Teknologi Informatika</p>
+      <h1 class="header-judul">Programming <em>Web</em></h1>
+      <p class="ketik"><span id="ketik"></span><i class="kursor-ketik"></i></p>
+    </div>
+
+    <div class="header-jam">Jakarta &nbsp;<b id="jam">--:--:--</b></div>
+    <div class="garis-emas"></div>
+  </header>
+
+  <script src="efek.js"></script>
+</body>
+</html>

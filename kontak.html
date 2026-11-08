@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Galery</title>
+    <link rel="stylesheet" href="STYLE.css">
+    <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+    <div class="aurora"><i></i><i></i><i></i></div>
+    <canvas id="debu"></canvas>
+    <div id="cahaya"></div>
+
+    <header class="rv">
+        <p class="eyebrow">Kontak</p>
+        <h1>Hubungi Kami</h1>
+        <h2>Universitas Ma'soem</h2>
+    </header>
+
+    <!-- Tabelmu: kolom dan isinya tetap sama. Atribut width/cellpadding
+         lama diganti pengaturan di CSS agar lebih rapi -->
+    <div class="tabel-wrap rv">
+        <table>
+            <tr>
+                <th>Alamat</th>
+                <th>Website</th>
+                <th>Email</th>
+                <th>Telp</th>
+                <th>WA</th>
+            </tr>
+            <tr>
+                <td>Jl. Raya Cipacing No. 22 Jatinangor 45363 Jawa Barat</td>
+                <td><a href="https://www.masoemuniversity.ac.id/" target="_blank" rel="noopener">www.masoemuniversity.ac.id</a></td>
+                <td>info@masoemuniversity.ac.id</td>
+                <td>022-7798340</td>
+                <td>08156033022</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Tambahan: kartu dengan tombol salin cepat -->
+    <section class="kontak-grid">
+        <article class="kartu rv">
+            <small>Email</small>
+            <b>info@masoemuniversity.ac.id</b>
+            <button class="btn" type="button" data-salin="info@masoemuniversity.ac.id">Salin</button>
+        </article>
+        <article class="kartu rv">
+            <small>Telepon</small>
+            <b>022-7798340</b>
+            <button class="btn" type="button" data-salin="022-7798340">Salin</button>
+        </article>
+        <article class="kartu rv">
+            <small>WhatsApp</small>
+            <b>08156033022</b>
+            <button class="btn" type="button" data-salin="08156033022">Salin</button>
+        </article>
+    </section>
+
+    <script src="efek.js"></script>
+</body>
+</html>

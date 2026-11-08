@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sebelum UTS</title>
+        <link rel="stylesheet" href="STYLE.css">
+    </head>
+
+    <!-- TATA LETAK ASLIMU TETAP SAMA:
+         baris 1 (25%)  = header
+         baris 2 (65%)  = menu 15% di kiri + isi halaman 85% di kanan
+         baris 3 (10%)  = footer
+         border/frameborder 0 membuat sambungan antar frame tidak terlihat -->
+    <frameset rows="25%,65%,10%" border="0" frameborder="0" framespacing="0">
+        <frame src="header.html" name="atas" noresize scrolling="no">
+
+        <frameset cols="15%, 85%" border="0" frameborder="0" framespacing="0">
+            <frame class="Frame" src="menu.html" name="menu" noresize>
+            <!-- name="kanan" wajib: link di menu.html memakai target="kanan" -->
+            <frame src="home.html" name="kanan">
+        </frameset>
+
+        <frame src="footer.html" name="bawah" noresize scrolling="no">
+    </frameset>
+
+    <!-- Catatan: frame ke-3 di bagian tengah (lokasi.html) dulu berlebih,
+         karena kolomnya hanya dua. Halaman lokasi tetap bisa dibuka
+         lewat menu di sebelah kiri. -->
+</html>
